@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Invitation | Pernikahan Andi & Siti</title>
+    <!-- Google Fonts untuk kesan mewah -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #0f172a;
+            color: #f8fafc;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .invitation-card {
+            background: #ffffff;
+            color: #1e293b;
+            width: 100%;
+            max-width: 420px;
+            margin: 20px;
+            padding: 40px 25px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border: 2px solid #d4af37;
+            box-sizing: border-box;
+        }
+        .brand {
+            font-size: 12px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #d4af37;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            color: #1e293b;
+            font-size: 36px;
+            margin: 10px 0;
+        }
+        h2 {
+            font-size: 18px;
+            color: #64748b;
+            font-weight: 400;
+            margin-bottom: 5px;
+        }
+        .guest-box {
+            background: #f8fafc;
+            border: 1px dashed #cbd5e1;
+            padding: 15px;
+            border-radius: 12px;
+            margin: 25px 0;
+        }
+        .guest-box p {
+            margin: 0;
+            font-size: 13px;
+            color: #64748b;
+        }
+        #nama-tamu {
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
+            color: #0f172a;
+            margin-top: 5px;
+            font-weight: 700;
+        }
+        .date {
+            font-size: 14px;
+            color: #475569;
+            margin-bottom: 25px;
+        }
+        .btn {
+            display: inline-block;
+            width: 100%;
+            padding: 14px 0;
+            background: linear-gradient(135deg, #d4af37, #aa7c11);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="invitation-card">
+        <div class="brand">✨ Royal Invitation ✨</div>
+        
+        <h2>The Wedding Of</h2>
+        <h1>Andi & Siti</h1>
+        
+        <p class="date">Minggu, 20 Desember 2026</p>
+        
+        <hr style="width: 40px; border: 1px solid #d4af37; margin: 20px auto;">
+
+        <div class="guest-box">
+            <p>Kepada Yth. Bapak/Ibu/Saudara/i:</p>
+            <div id="nama-tamu">Tamu Undangan</div>
+        </div>
+
+        <p style="font-size: 13px; color: #64748b; margin-bottom: 25px;">
+            Tanpa mengurangi rasa hormat, kami mengundang Anda untuk hadir di hari bahagia kami.
+        </p>
+
+        <a href="#" class="btn" onclick="alert('Terima kasih atas konfirmasi kehadirannya!')">Buka Undangan</a>
+    </div>
+
+    <script>
+        // Otomatis membaca nama tamu dari link (Contoh: ?to=Bapak-Budi)
+        const urlParams = new URLSearchParams(window.location.search);
+        const namaTamu = urlParams.get('to');
+        if (namaTamu) {
+            // Mengubah tanda hubung (-) menjadi spasi otomatis
+            document.getElementById('nama-tamu').innerText = namaTamu.replace(/-/g, ' ');
+        }
+    </script>
+</body>
+  </html>
+  
