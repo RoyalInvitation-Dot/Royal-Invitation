@@ -96,6 +96,7 @@ footer{padding:25px;text-align:center;font:9px Arial,sans-serif;letter-spacing:1
 <button class="music" id="musicButton" aria-label="Putar atau jeda musik">♫</button>
 <div class="notice" id="notice"></div>
 
+<!-- Menggunakan file C3.jpeg sebagai background cover -->
 <section class="cover" style="background: url('C3.jpeg') center/cover no-repeat;">
   <div class="cover-content">
     <p class="small-title">THE WEDDING OF</p>
@@ -120,13 +121,15 @@ footer{padding:25px;text-align:center;font:9px Arial,sans-serif;letter-spacing:1
 <section class="content">
   <div class="couple">
     <div class="person animate">
-      <img src="P.jpeg" alt="Hadianto" loading="lazy">
+      <!-- Menggunakan C1.jpeg untuk foto mempelai pria jika P.jpeg tidak ada -->
+      <img src="C1.jpeg" alt="Hadianto" loading="lazy">
       <h3>Hadianto Kurniawan Tan</h3>
       <p>Putra dari<br>Bapak Tan Tjoen Hwa<br>&<br>Ibu Tjhin Tjhiu Loe</p>
     </div>
     <div class="and animate">&</div>
     <div class="person animate">
-      <img src="W.jpeg" alt="Ilmi" loading="lazy">
+      <!-- Menggunakan C2.jpeg untuk foto mempelai wanita jika W.jpeg tidak ada -->
+      <img src="C2.jpeg" alt="Ilmi" loading="lazy">
       <h3>Ilmi Riadoh</h3>
       <p>Putri dari<br>Bapak Muhammad Saleh<br>&<br>Ibu Nur Alam Rangkuti</p>
     </div>
@@ -174,6 +177,7 @@ footer{padding:25px;text-align:center;font:9px Arial,sans-serif;letter-spacing:1
   <p class="small-title animate">OUR MEMORIES</p>
   <h2 class="animate">Galeri</h2>
   <div class="gallery-grid">
+    <!-- Mengambil dari file B1 sampai B6 yang sudah Anda unggah di folder demo -->
     <img class="animate" src="B6.jpeg" alt="Kenangan 1" loading="lazy">
     <img class="animate" src="B5.jpeg" alt="Kenangan 2" loading="lazy">
     <img class="animate" src="B4.jpeg" alt="Kenangan 3" loading="lazy">
@@ -195,7 +199,8 @@ footer{padding:25px;text-align:center;font:9px Arial,sans-serif;letter-spacing:1
 </section>
 
 <section class="closing">
-  <img src="C4.jpeg" alt="Penutup" loading="lazy">
+  <!-- Menggunakan C2.jpeg sebagai background penutup -->
+  <img src="C2.jpeg" alt="Penutup" loading="lazy">
   <div class="closing-content">
     <p>Terima kasih atas doa dan kasih yang diberikan.</p>
     <h2>Hadi & Riya</h2>
@@ -303,5 +308,4 @@ footer{padding:25px;text-align:center;font:9px Arial,sans-serif;letter-spacing:1
 </script>
 
 </body>
-        </html>
-        
+</html>
